@@ -19,36 +19,42 @@ body {
 
 .content { width: 440px; position: fixed; }
 
-h1 			{ letter-spacing: -0.04em; line-height: 1em; font-weight: 600; }
-h1 span 		{ color: #429FFD; }
+h1 					{ letter-spacing: -0.04em; line-height: 1em; font-weight: 600; }
+h1 span 			{ color: #429FFD; }
 h1 span a			{ text-decoration: none; color: #429FFD; }
 h1 span a:hover 	{ color: #FAA1BB; }
 
-p			{ line-height: 130%; }
+p					{ line-height: 130%; }
 
-a 			{ color: #011F3F; }
-a:hover 	{ color: #429FFD; }
+a 					{ color: #011F3F; }
+a:hover 			{ color: #429FFD; }
 
 ul.links 					{ display: block;	padding: 16px 0 16px 488px; margin: 0; list-style: none; }
 ul.links li 				{ font-size: 136px; font-weight: 600; letter-spacing: -0.04em; line-height: 1.8em; }
 ul.links li a 				{ color: #011F3F; text-decoration: none; }
-ul.links li.personal a	{ color: #F05D5E; }
+ul.links li.personal a		{ color: #F05D5E; }
 
 /* RESPONSIVE */
 @media (max-width: 1199px) {
+
 	.content 	{ width: 320px; }
 	ul.links 	{ padding-top: 32px; padding-bottom: 32px; }
 	ul.links li { font-size: 72px; letter-spacing: -0.04em; line-height: 1.7em;}
+
 }
 
 @media (max-width: 1024px) {
+
 	.content 	{ width: 100%; position: relative; }
 	ul.links 	{ padding: 0; }
 	ul.links li { line-height: 1.6em; }
+
 }
 
 @media (max-width: 767px) {
+
 	body 			{ padding: 24px; font-size: 17px; }
 	.logo 		{ width: 32px; height: 32px; }
 	ul.links li { font-size: 34px;  line-height: 1.6em; }
+	
 }
