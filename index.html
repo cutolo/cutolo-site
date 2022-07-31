@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Francesco Cutolo</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cutolo.xyz</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" href="style.css">
 
-		<meta name="keywords" content="product design, design, information architecture, branding, ux, ui, ux design, ui design, italia, italy, italian, designer, product designer, ux designer" />
-		<meta name="description" content="Design" />
+	<meta name="keywords" content="product design, design, information architecture, branding, ux, ui, ux design, ui design, italia, italy, italian, designer, product designer, ux designer" />
+	<meta name="description" content="Design" />
 
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/stile.css" />
+	<link rel="shortcut icon" href="favicon.ico">
 
-	</head>
-	<body>
+</head>
+<body>
 
-	<div class="content">
-		<img class="logo" src="img/logo.svg" width="48" height="48" alt="logo">
-		<h1>Francesco Cutolo <br><span>Sr. Product Designer at <a href="http://klarna.com">Klarna</a></span></h1>
-		<p>I'm a fast-paced designer with a multidisciplinary background and 9+ years of experience building digital products for desktop and mobile.</p><p>Write me a nice and slow email at <a href="mailto:francesco@cutolo.fr">francesco@cutolo.pro</a>.</p>
+	<div id="luxy">
+		<main id="main">
+
+			<ul id="menu">
+				<li><a target="_blank" href="cv.pdf">CV</a></li>
+				<li><a target="_blank" href="https://twitter.com/cut_olo">Twitter</a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/cut-olo/">Linkedin</a></li>
+				<li><a target="_blank" href="https://www.instagram.com/slidedownthesurfaceofthings/">IG</a></li>
+			</ul>
+
+			<header>
+				<img id="avatar" src="img/avatar.jpg" alt="francesco profile picture">
+
+				<svg id="grid" width="312" height="312" viewBox="0 0 312 312" fill="none">
+					<path d="M3 3L307.051 307.051" />
+					<path d="M3.97461 308.025L308.026 3.97449" />
+					<path d="M80.9618 3H3V80.9618" />
+					<path d="M231.038 3H309V80.9618" />
+					<path d="M3 231.038V309H80.9618" />
+					<path d="M309 231.038V309H231.038" />
+				</svg>			
+			</header>
+			
+			<hr>
+			<h1>Francesco Cutolo</h1>
+			<h2>Design systems manager <span>@ Klarna</span></h2>
+			<hr>
+			<p>I help to solve problems and streamline processes with speed and efficiency.</p>
+			<p>I used to take care of interfaces and UX for 12 years, now I’m taking care of people, creating the best conditions for them to ideate and execute.</p>
+		
+			<footer>
+				<hr>
+				<span> Last update: summer 2022</span>
+			</footer>
+		
+		</main>	
 	</div>
 
-	<ul class="links">
-		<li><a href="https://cutolo.fr/cv/">Resume</a></li>
-		<li><a href="https://cutolo.fr/portfolio/">Portfolio</a></li>
-		<li class="personal"><a href="https://dribbble.com/cutolo">Dribbble</a></li>
-		<li class="personal"><a href="https://twitter.com/cut_olo">Twitter</a></li>
-		<li class="personal"><a href="https://medium.com/@cutolo">Medium</a></li>
-	</ul>
-
-	</body>
+	<script src="js/luxy.js" charset="utf-8"></script>
+	<script>
+		luxy.init({
+			wrapper: '#luxy',
+			targets : '.luxy-el',
+			wrapperSpeed:  0.08
+		});
+	</script>
+	
+</body>
 </html>
