@@ -4,35 +4,36 @@
 	src: url("font/NeueMontreal.woff2") format("woff2"),
 }
 
-* 						{ box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
-html					{ font-family: "NeueMontreal", sans-serif; }
-html,body			{ width: 100%; -ms-overflow-x: hidden; overflow-x: hidden; }
-body					{ margin: 0; background: #1d1d1e; color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-h1, h2, p, a		{ margin: 0; font-weight: 400; text-decoration: none; }
-h1 					{ font-size: 96px; line-height: 105%; margin-bottom: 16px; }
-h2 					{ font-size: 72px; line-height: 105%; }
-h2 span 				{ color: #ECB0C1; }
-p						{ font-size: 48px; line-height: 115%; margin-bottom: 16px; }
-hr 					{ display: block; width: 100%; height: 64px; border: none; }
+	* 								{ box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+	html							{ font-family: "NeueMontreal", sans-serif; }
+	body							{ margin: 0; background: #1d1d1e; color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+	h1, h2, p, a				{ margin: 0; font-weight: 400; text-decoration: none; }
+	h1 							{ font-size: 96px; line-height: 105%; margin-bottom: 16px; }
+	h2 							{ font-size: 72px; line-height: 105%; }
+	h2 span 						{ color: #ECB0C1; }
+	p								{ font-size: 48px; line-height: 115%; margin-bottom: 16px; }
+	hr 							{ display: block; width: 100%; height: 64px; border: none; }
 
-ul#menu						{ display: block; margin: 0; padding: 0; list-style: none; position: absolute; top: 64px; left: 64px; z-index: 1; }
-ul#menu li 					{ font-size: 24px; line-height: 105%; margin: 0 0 16px 0; }
-ul#menu li a 				{ text-decoration: underline; color: #fff; transition: all 150ms ease; }
-ul#menu li a:hover		{ opacity: 0.8; transition: all 120ms ease; }
-ul#menu li a:active		{ opacity: 0.8; transition: all 120ms ease; }
+	.container 					{ margin: 64px auto; display: flex; align-items: flex-start; width: 896px; padding-right: 128px; }
+	.content						{ display: block; width: 640px; }
 
-main 							{ margin: 64px auto; display: block; width: 640px; }
+	ul#menu						{ display: block; margin: 0; padding: 0; list-style: none; position: sticky; top: 64px; width: 128px; }
+	ul#menu li 					{ font-size: 24px; line-height: 105%; margin: 0 0 16px 0; }
+	ul#menu li a 				{ text-decoration: underline; color: #fff; transition: all 150ms ease; }
+	ul#menu li a:hover		{ opacity: 0.8; transition: all 120ms ease; }
+	ul#menu li a:active		{ opacity: 0.8; transition: all 120ms ease; }
 
-header 						{ display: block; width: 100%; }
-header img, header svg	{ float: left; width: 312px; }
-#avatar 						{ border: 6px solid #fff; margin-right: 16px; }
-#grid 						{ stroke: #fff; stroke-width: 6px; }
+	header 						{ display: block; clear: both; width: 100%; }
+	header img, header svg	{ float: left; width: 312px; }
+	#avatar 						{ margin-right: 16px; }
+	#grid 						{ stroke: #fff; stroke-width: 6px; }
 
-footer span 				{ background: -webkit-linear-gradient(3deg, #1AECDF, #E233FF); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #1AECDF; font-size: 24px; }
+	footer span 				{ background: -webkit-linear-gradient(3deg, #1AECDF, #E233FF); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #1AECDF; font-size: 24px; }
 
 @media(max-width: 1023px){
 
-	ul#menu 							{ position: static; top: auto; left: auto; margin: 0 auto 64px auto; }
+	.container 						{ width: 640px; display: block; padding-right: 0; }
+	ul#menu 							{ display: flex; align-items: flex-start; position: static; margin-bottom: 64px; }
 	ul#menu li 						{ display: inline; margin: 0 16px 0 0; }
 	header img, header  svg 	{ width: 49%; height: 49%; }
 	#avatar 							{ margin-right: 2%; }
@@ -41,12 +42,9 @@ footer span 				{ background: -webkit-linear-gradient(3deg, #1AECDF, #E233FF); b
 
 @media(max-width: 767px){
 
-	main 		{ width: 100%; padding: 0 16px; }
-	#grid 	{ stroke-width: 10px; }
-
+	.container 					{ width: 100%; padding: 0 24px; margin: 40px 0; }
+	.content 					{ width: 100%; }
 	ul#menu 						{ margin-bottom: 40px; }
-
-	main 							{ margin: 40px 0; }
 	h1 							{ font-size: 72px; margin-bottom: 16px; }
 	h2 							{ font-size: 48px; }
 	p								{ font-size: 32px; margin-bottom: 16px; }
@@ -57,12 +55,8 @@ footer span 				{ background: -webkit-linear-gradient(3deg, #1AECDF, #E233FF); b
 
 @media(max-width: 380px){
 
-	#avatar 	{ border-width: 4px; }
-	#grid 	{ stroke-width: 6px; }
-
+	.container 					{ margin: 24px 0; }
 	ul#menu 						{ margin-bottom: 24px; }
-
-	main 							{ margin: 24px 0; }
 	h1 							{ font-size: 56px; margin-bottom: 8px; }
 	h2 							{ font-size: 32px; }
 	p								{ font-size: 21px; margin-bottom: 8px; }
